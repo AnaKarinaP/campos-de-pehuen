@@ -39,17 +39,23 @@
     <div class="container">
       <h2>Sobre Nosotros</h2>
       <p>¡Bienvenidos a Campos del Pehuen!</p> 
-      <p>Esta empresa familiar ubicada a 800 m de la ruta 205 km 68,700, se encarga de llevarte la naturaleza a tu casa. </p>
-      <p>Su grama bahiana de calidad premium permite que tengas tu propio espacio verde a prueba de chicos, perros, gatos. Solo precisas agua, un corte mensual ¡y a disfrutar! </p> 
-      <p>La grama la podes llevar en panes, plantas o bandejas con plantines depende la superficie que vayas a cubrir y el presupuesto que destines </p>
+      <p>Esta empresa familiar ubicada a 800 m de la ruta 205 km 68,700, se encarga de llevarte la naturaleza a tu casa.</p>
+      <p>Su grama bahiana de calidad premium permite que tengas tu propio espacio verde a prueba de chicos, perros, gatos. Solo precisas agua, un corte mensual ¡y a disfrutar!</p> 
+      <p>La grama la podes llevar en panes, plantas o bandejas con plantines depende la superficie que vayas a cubrir y el presupuesto que destines.</p>
       <p>Emprendimiento de Cañuelas para todos!!!</p>
       
       <p><strong>Consultas con Edith:</strong></p>
       <p class="whatsapp-link"><i class="fab fa-whatsapp"></i> 11 4081-8245</p>
       <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Escribinos por WhatsApp</a>
 
-      <p id="info-adicional" style="display: none;">Nuestra grama es cosechada a diario y seleccionada a mano para asegurar calidad y frescura.</p>
-      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional">Ver más sobre nuestra grama</button>
+      <div id="info-adicional" style="display: none; margin-top: 2rem;">
+        <h3>VISIÓN</h3>
+        <p>CDP tiene como visión ser el productor de grama de confianza donde los clientes vuelvan y a quien recomienden, y complementar la experiencia del cliente ofreciéndole diversos productos relacionados al parquizado de su espacio verde y su mantenimiento.</p>
+        
+        <h3>MISIÓN</h3>
+        <p>CDP es una Pyme agropecuaria dedicada a la producción de grama bahiana. Nuestra misión es lograr un producto de la más alta calidad para que la experiencia del cliente sea enteramente satisfactoria al adquirir nuestro pasto y se sienta comercial y personalmente satisfecho con nuestra atención.</p>
+      </div>
+      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional" id="toggle-btn">Ver misión y visión</button>
     </div>
   </section>
 
@@ -67,33 +73,27 @@
   </section>
 
   <section class="fertilizacion" id="contacto">
-  <div class="container">
-    <h2>⚡️ FERTILIZANTES ⚡️</h2>
-    <p>Una vez colocados nuestros panes de Grama Bahiana premium sobre el terreno, luego de 1 mes de crecimiento y desde septiembre a abril, se debe fertilizar con <strong>UREA</strong> y <strong>TRIPLE 15</strong>.</p>
+    <div class="container">
+      <h2>⚡️ FERTILIZANTES ⚡️</h2>
+      <p>Una vez colocados nuestros panes de Grama Bahiana premium sobre el terreno, luego de 1 mes de crecimiento y desde septiembre a abril, se debe fertilizar con <strong>UREA</strong> y <strong>TRIPLE 15</strong>.</p>
 
-    <h3>🌱¿Cómo fertilizar la grama bahiana?</h3>
-    
-    <p>¡Es muy sencillo!</p>
+      <h3>🌱¿Cómo fertilizar la grama bahiana?</h3>
+      <p>¡Es muy sencillo!</p>
 
-    <p><strong>👉🏻 Primero fertilizar con UREA:</strong> Se coloca <strong>15 g por m²</strong> para lograr que la grama bahiana se hidrate, acumule agua y aumente su volumen. Luego, <strong>regar</strong>.</p>
+      <p><strong>👉🏻 Primero fertilizar con UREA:</strong> Se coloca <strong>15 g por m²</strong> para lograr que la grama bahiana se hidrate, acumule agua y aumente su volumen. Luego, <strong>regar</strong>.</p>
 
-    <p><strong>👉🏻 A los 15 días</strong> de haber colocado la UREA, se aplica el <strong>TRIPLE 15</strong>, que se encarga de nutrir y fortalecer el crecimiento de la grama bahiana. Luego, <strong>regar 💦🌱</strong></p>
+      <p><strong>👉🏻 A los 15 días</strong> de haber colocado la UREA, se aplica el <strong>TRIPLE 15</strong>, que se encarga de nutrir y fortalecer el crecimiento de la grama bahiana. Luego, <strong>regar 💦🌱</strong></p>
 
-    <p>👉🏻 La fertilización debe estar acompañada por un adecuado y periódico <strong>corte</strong>, incentivando así el entramado y nacimiento de nuevos esquejes.</p>
-  </div>
-  </section>
-
-
-    
+      <p>👉🏻 La fertilización debe estar acompañada por un adecuado y periódico <strong>corte</strong>, incentivando así el entramado y nacimiento de nuevos esquejes.</p>
+    </div>
   </section>
 
   <footer>
     <div class="container">
       <p>&copy; 2025 Campos del Pehuén. Todos los derechos reservados.</p>
-      <p><strong>Web:</strong> <a href="https://www.camposdelpehuen.com.ar" target="_blank">www.camposdelpehuen.com.ar</a></p>
       <div class="social-icons">
-        <a href="https://www.instagram.com/campos.del.pehuen/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/541140818245" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/campos.del.pehuen/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/camposdelpehuensrl" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
   </footer>
@@ -104,15 +104,11 @@
   <script>
     function toggleInfo() {
       const info = document.getElementById("info-adicional");
-      const btn = document.querySelector('.btn-small');
+      const btn = document.getElementById("toggle-btn");
       const visible = info.style.display === "block";
       info.style.display = visible ? "none" : "block";
       btn.setAttribute("aria-expanded", !visible);
-    }
-
-    function enviarFormulario(e) {
-      e.preventDefault();
-      document.getElementById('mensaje-confirmacion').style.display = 'block';
+      btn.textContent = visible ? "Ver misión y visión" : "Ocultar misión y visión";
     }
 
     window.addEventListener('scroll', () => {
