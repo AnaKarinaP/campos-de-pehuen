@@ -38,24 +38,25 @@
   <section class="nosotros" id="nosotros">
     <div class="container">
       <h2>Sobre Nosotros</h2>
-      <p>¡Bienvenidos a Campos del Pehuen!</p> 
+      <p>¡Bienvenidos a Campos del Pehuen!</p>
       <p>Esta empresa familiar ubicada a 800 m de la ruta 205 km 68,700, se encarga de llevarte la naturaleza a tu casa.</p>
-      <p>Su grama bahiana de calidad premium permite que tengas tu propio espacio verde a prueba de chicos, perros, gatos. Solo precisas agua, un corte mensual ¡y a disfrutar!</p> 
+      <p>Su grama bahiana de calidad premium permite que tengas tu propio espacio verde a prueba de chicos, perros, gatos. Solo precisas agua, un corte mensual ¡y a disfrutar!</p>
       <p>La grama la podes llevar en panes, plantas o bandejas con plantines depende la superficie que vayas a cubrir y el presupuesto que destines.</p>
       <p>Emprendimiento de Cañuelas para todos!!!</p>
-      
+     
       <p><strong>Consultas con Edith:</strong></p>
       <p class="whatsapp-link"><i class="fab fa-whatsapp"></i> 11 4081-8245</p>
       <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Escribinos por WhatsApp</a>
 
-      <div id="info-adicional" style="display: none; margin-top: 2rem;">
+      <!-- Contenido oculto que se muestra al hacer clic -->
+      <div id="info-adicional" style="display: none; margin-top: 1.5rem; text-align: left; background: #eef5ed; padding: 1rem; border-radius: 8px; color: #2e4d38;">
         <h3>VISIÓN</h3>
         <p>CDP tiene como visión ser el productor de grama de confianza donde los clientes vuelvan y a quien recomienden, y complementar la experiencia del cliente ofreciéndole diversos productos relacionados al parquizado de su espacio verde y su mantenimiento.</p>
-        
         <h3>MISIÓN</h3>
         <p>CDP es una Pyme agropecuaria dedicada a la producción de grama bahiana. Nuestra misión es lograr un producto de la más alta calidad para que la experiencia del cliente sea enteramente satisfactoria al adquirir nuestro pasto y se sienta comercial y personalmente satisfecho con nuestra atención.</p>
       </div>
-      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional" id="toggle-btn">Ver misión y visión</button>
+
+      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional">Ver misión y visión</button>
     </div>
   </section>
 
@@ -78,6 +79,7 @@
       <p>Una vez colocados nuestros panes de Grama Bahiana premium sobre el terreno, luego de 1 mes de crecimiento y desde septiembre a abril, se debe fertilizar con <strong>UREA</strong> y <strong>TRIPLE 15</strong>.</p>
 
       <h3>🌱¿Cómo fertilizar la grama bahiana?</h3>
+
       <p>¡Es muy sencillo!</p>
 
       <p><strong>👉🏻 Primero fertilizar con UREA:</strong> Se coloca <strong>15 g por m²</strong> para lograr que la grama bahiana se hidrate, acumule agua y aumente su volumen. Luego, <strong>regar</strong>.</p>
@@ -88,15 +90,19 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Campos del Pehuén. Todos los derechos reservados.</p>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/campos.del.pehuen/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/camposdelpehuensrl" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-      </div>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Campos del Pehuén. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/camposdelpehuensrl" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-link facebook">
+        <i class="fab fa-facebook-f"></i> Facebook: campos del pehuen srl
+      </a>
+      <a href="https://www.instagram.com/campos.del.pehuen" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-link instagram">
+        <i class="fab fa-instagram"></i> Instagram: campos.del.pehuen
+      </a>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <a href="https://wa.me/541140818245" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">💬</a>
   <a href="#inicio" class="btn-subir" aria-label="Volver arriba">⬆</a>
@@ -104,11 +110,10 @@
   <script>
     function toggleInfo() {
       const info = document.getElementById("info-adicional");
-      const btn = document.getElementById("toggle-btn");
+      const btn = document.querySelector('.btn-small');
       const visible = info.style.display === "block";
       info.style.display = visible ? "none" : "block";
       btn.setAttribute("aria-expanded", !visible);
-      btn.textContent = visible ? "Ver misión y visión" : "Ocultar misión y visión";
     }
 
     window.addEventListener('scroll', () => {
@@ -137,3 +142,4 @@
   </script>
 </body>
 </html>
+
