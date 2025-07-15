@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campos del Pehuén | Inicio</title>
+  <meta name="description" content="Grama bahiana y tierra abonada directa del campo. Calidad premium y atención personalizada.">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2c5b996f3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="#inicio" class="logo" aria-label="Inicio">
+        <img src="logo.png" alt="Logo de Campos del Pehuén" class="logo-image" />
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="nav">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio" role="banner">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Calidad natural directo desde el campo</h1>
+      <p>Grama bahiana de primera, tierra abonada y fertilizantes listos para transformar tu espacio.</p>
+      <a href="productos.html" class="btn">Ver Productos</a>
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>¡Bienvenidos a Campos del Pehuen!</p> 
+      <p>Esta empresa familiar ubicada a 800 m de la ruta 205 km 68,700, se encarga de llevarte la naturaleza a tu casa. </p>
+      <p>Su grama bahiana de calidad premium permite que tengas tu propio espacio verde a prueba de chicos, perros, gatos. Solo precisas agua, un corte mensual ¡y a disfrutar! </p> 
+      <p>La grama la podes llevar en panes, plantas o bandejas con plantines depende la superficie que vayas a cubrir y el presupuesto que destines </p>
+      <p>Emprendimiento de Cañuelas para todos!!!</p>
+      
+      <p><strong>Consultas con Edith:</strong></p>
+      <p class="whatsapp-link"><i class="fab fa-whatsapp"></i> 11 4081-8245</p>
+      <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Escribinos por WhatsApp</a>
+
+      <p id="info-adicional" style="display: none;">Nuestra grama es cosechada a diario y seleccionada a mano para asegurar calidad y frescura.</p>
+      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional">Ver más sobre nuestra grama</button>
+    </div>
+  </section>
+
+  <section class="ventajas">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <ul>
+        <li>✅ Grama fresca y de primera calidad</li>
+        <li>✅ Entrega rápida y local</li>
+        <li>✅ Asesoramiento gratuito</li>
+        <li>✅ Insumos certificados</li>
+        <li>✅ Atención personalizada</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fertilizacion" id="contacto">
+  <div class="container">
+    <h2>⚡️ FERTILIZANTES ⚡️</h2>
+    <p>Una vez colocados nuestros panes de Grama Bahiana premium sobre el terreno, luego de 1 mes de crecimiento y desde septiembre a abril, se debe fertilizar con <strong>UREA</strong> y <strong>TRIPLE 15</strong>.</p>
+
+    <h3>🌱¿Cómo fertilizar la grama bahiana?</h3>
+    
+    <p>¡Es muy sencillo!</p>
+
+    <p><strong>👉🏻 Primero fertilizar con UREA:</strong> Se coloca <strong>15 g por m²</strong> para lograr que la grama bahiana se hidrate, acumule agua y aumente su volumen. Luego, <strong>regar</strong>.</p>
+
+    <p><strong>👉🏻 A los 15 días</strong> de haber colocado la UREA, se aplica el <strong>TRIPLE 15</strong>, que se encarga de nutrir y fortalecer el crecimiento de la grama bahiana. Luego, <strong>regar 💦🌱</strong></p>
+
+    <p>👉🏻 La fertilización debe estar acompañada por un adecuado y periódico <strong>corte</strong>, incentivando así el entramado y nacimiento de nuevos esquejes.</p>
+  </div>
+  </section>
+
+
+    
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Campos del Pehuén. Todos los derechos reservados.</p>
+      <p><strong>Web:</strong> <a href="https://www.camposdelpehuen.com.ar" target="_blank">www.camposdelpehuen.com.ar</a></p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/campos.del.pehuen/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/541140818245" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/541140818245" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">💬</a>
+  <a href="#inicio" class="btn-subir" aria-label="Volver arriba">⬆</a>
+
+  <script>
+    function toggleInfo() {
+      const info = document.getElementById("info-adicional");
+      const btn = document.querySelector('.btn-small');
+      const visible = info.style.display === "block";
+      info.style.display = visible ? "none" : "block";
+      btn.setAttribute("aria-expanded", !visible);
+    }
+
+    function enviarFormulario(e) {
+      e.preventDefault();
+      document.getElementById('mensaje-confirmacion').style.display = 'block';
+    }
+
+    window.addEventListener('scroll', () => {
+      const btn = document.querySelector('.btn-subir');
+      btn.style.display = (window.pageYOffset > 300) ? 'block' : 'none';
+    });
+
+    window.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("nav a");
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 2) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

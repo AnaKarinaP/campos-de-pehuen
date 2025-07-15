@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | Campos del Pehuén</title>
+  <meta name="description" content="Grama bahiana, tierra abonada, fertilizantes y más. Conocé todo lo que ofrecemos para tu jardín.">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2c5b996f3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html#inicio" class="logo">
+        <img src="logo.png" alt="Logo de Campos del Pehuén" class="logo-image" />
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="productos.html" class="active">Productos</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="productos" id="productos">
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <div class="productos-grid">
+
+        <!-- Grama 1ra calidad -->
+        <div class="producto">
+          <img src="grama1.jpg" alt="." />
+          <h3>Grama Bahiana de 1ra calidad</h3>
+          <p>Pan de 60x40x5cm (4 panes/m²). Peso aprox: 5kg. Puede tener hasta 5% de otras gramíneas.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Grama mezcla -->
+        <div class="producto">
+          <img src="grama2.jpg" alt="." />
+          <h3>Grama Bahiana Mezcla</h3>
+          <p>Pan de 60x40x5cm (4 panes/m²). Peso aprox: 5kg. Puede contener entre 10% y 20% de otras gramíneas.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Bolsas de tierra -->
+        <div class="producto">
+          <img src="tierra.jpg" alt="." />
+          <h3>Tierra Abonada</h3>
+          <p>Tierra negra fértil con guano y perlita. Presentación: bolsa de 18kg.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Plantas de grama -->
+        <div class="producto">
+          <img src="plantas-grama.jpg" alt="." />
+          <h3>Plantas de Grama</h3>
+          <p>Se entregan en macetas plásticas número 10. Fáciles de trasplantar y mantener.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Plantines de grama -->
+        <div class="producto">
+          <img src="plantines.jpg" alt="." />
+          <h3>Plantines de Grama</h3>
+          <p>En bandejas de 72 celdas (72 plantines). Excelente opción para grandes superficies.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Urea -->
+        <div class="producto">
+          <img src="urea.jpg" alt="." />
+          <h3>Urea</h3>
+          <p>Fertilizante granulado esencial para grama. Aplicar de septiembre a abril.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Triple 15 -->
+        <div class="producto">
+          <img src="triple15.jpg" alt="." />
+          <h3>Triple 15</h3>
+          <p>Granulado con nitrógeno, fósforo y potasio. Presentación: ½ kg y 1 kg. Uso: septiembre a abril.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+        <!-- Turba -->
+        <div class="producto">
+          <img src="turba.jpg" alt="." />
+          <h3>Turba</h3>
+          <p>Mejora la calidad del suelo, aireación y retención de humedad. Bolsa de 10 dcm³.</p>
+          <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Consultar</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Campos del Pehuén. Todos los derechos reservados.</p>
+      <p><strong>Web:</strong> <a href="https://www.camposdelpehuen.com.ar" target="_blank">www.camposdelpehuen.com.ar</a></p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/campos.del.pehuen/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/541140818245" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/541140818245" class="whatsapp-btn" target="_blank">💬</a>
+  <a href="#productos" class="btn-subir">⬆</a>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const btn = document.querySelector('.btn-subir');
+      btn.style.display = (window.pageYOffset > 300) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
+
+
