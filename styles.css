@@ -330,5 +330,32 @@ footer p {
   margin-bottom: 2rem;
 }
 
+/* MANTENIMIENTO */
+.mantenimiento-bloque {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.mantenimiento-bloque h3 {
+  color: #4a7856;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.mantenimiento-bloque p,
+.mantenimiento-bloque li {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+.mantenimiento-bloque ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
 
 
