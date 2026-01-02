@@ -5,10 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Campos del Pehuén | Inicio</title>
   <meta name="description" content="Grama bahiana y tierra abonada directa del campo. Calidad premium y atención personalizada.">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css?v=20250815">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a2c5b996f3.js" crossorigin="anonymous" defer></script>
+
+  <!-- Font Awesome (CORRECTO Y ÚNICO) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+  />
 </head>
+
 <body>
 
   <header class="header">
@@ -22,6 +33,7 @@
           <li><a href="index.html#nosotros">Nosotros</a></li>
           <li><a href="productos.html">Productos</a></li>
           <li><a href="mantenimiento.html">Mantenimiento</a></li>
+          <li><a href="galeria.html" >Galería</a></li>
         </ul>
       </nav>
     </div>
@@ -40,25 +52,27 @@
     <div class="container">
       <h2>Sobre Nosotros 🌿</h2>
       <p>¡Bienvenidos a Campos del Pehuen!</p>
-      <p>Esta empresa familiar ubicada en cañuelas, se encarga de llevarte la naturaleza a tu casa.</p>
-      <p>Nuestra grama bahiana "destaca en calidad" TOLERA EL ALTO TRANSITO, y permite q tengas tu espacio verde A PRUEBA DE niños y mascotas. </P>
-      <p>La grama la podes llevar en panes, plantas o bandejas con plantines depende la superficie que vayas a cubrir y el presupuesto que destines.</p>
-      <P>Solo regas, cortas fertilizas y a disfrutar!!!</p>
+      <p>Nuestra empresa familiar ubicada en cañuelas, se encarga de llevarte la naturaleza a tu casa.</p>
+      <p>Nuestra grama bahiana destaca por su calidad, tolerando el alto tránsito y creando tus espacios verdes a prueba de niños y mascotas.</p>
+      <p>Podes llevar tu grama en panes, plantas y/o bandejas de plantines depende la superficie que vayas a cubrir y el presupuesto disponible.</p>
+      <p>Solo regas, cortas fertilizas y a disfrutar!!!</p>
       <p>Emprendimiento de Cañuelas para todos!!!</p>
-      <p>Escribimos por whatsapp para atención inmediata o mándanos un mail a Grama@camposdelpehuen.com.ar</p>
-      
+      <p>Escribinos por whatsapp para atención inmediata y personalizada o mándanos un mail a Grama@camposdelpehuen.com.ar</p>
+
       <p><strong>Consultas con Edith:</strong></p>
       <p class="whatsapp-link"><i class="fab fa-whatsapp"></i> 11 4081-8245</p>
       <a href="https://wa.me/541140818245" target="_blank" class="btn-whatsapp">Escribinos por WhatsApp</a>
 
       <div id="info-adicional" style="display: none; margin-top: 1.5rem; text-align: left; background: #eef5ed; padding: 1rem; border-radius: 8px; color: #2e4d38;">
         <h3>VISIÓN</h3>
-        <p>CDP tiene como visión ser el productor de grama de confianza donde los clientes vuelvan y a quien recomienden, y complementar la experiencia del cliente ofreciéndole diversos productos relacionados al parquizado de su espacio verde y su mantenimiento.</p>
+        <p>Nuestra meta es convertirnos en tu productor de grama de confianza.</p>
         <h3>MISIÓN</h3>
-        <p>CDP es una Pyme agropecuaria dedicada a la producción de grama bahiana. Nuestra misión es lograr un producto de la más alta calidad para que la experiencia del cliente sea enteramente satisfactoria al adquirir nuestro pasto y se sienta comercial y personalmente satisfecho con nuestra atención.</p>
+        <p>Somos una Pyme agropecuaria dedicada a la producción de grama bahiana.</p>
       </div>
 
-      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional">Ver misión y visión</button>
+      <button onclick="toggleInfo()" class="btn-small" aria-expanded="false" aria-controls="info-adicional">
+        Ver misión y visión
+      </button>
     </div>
   </section>
 
@@ -66,7 +80,7 @@
     <div class="container">
       <h2>¿Por qué elegirnos? 🌿</h2>
       <ul>
-        <li>Grama recién cosechada</li>
+        <li>Grama recién cosechada para vos</li>
         <li>Podes venir a retirar o coordinamos tu flete</li>
         <li>Quedamos a tu disposición después que parquices</li>
         <li>Insumos certificados</li>
@@ -78,12 +92,16 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 Campos del Pehuén. Todos los derechos reservados.</p>
+
       <div class="social-icons">
-        <a href="https://www.facebook.com/share/16uVPizvyV/" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-link facebook">
-          <i class="fab fa-facebook-f"></i> Facebook: campos del pehuen srl
+        <a href="https://www.facebook.com/share/16uVPizvyV/" target="_blank" class="social-link facebook">
+          <i class="fab fa-facebook-f"></i>
+          Facebook: campos del pehuen srl
         </a>
-        <a href="https://www.instagram.com/campos.del.pehuen" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-link instagram">
-          <i class="fab fa-instagram"></i> Instagram: campos.del.pehuen
+
+        <a href="https://www.instagram.com/campos.del.pehuen" target="_blank" class="social-link instagram">
+          <i class="fab fa-instagram"></i>
+          Instagram: campos.del.pehuen
         </a>
       </div>
     </div>
@@ -105,25 +123,7 @@
       const btn = document.querySelector('.btn-subir');
       btn.style.display = (window.pageYOffset > 300) ? 'block' : 'none';
     });
-
-    window.addEventListener("scroll", () => {
-      const sections = document.querySelectorAll("section");
-      const navLinks = document.querySelectorAll("nav a");
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 2) {
-          current = section.getAttribute("id");
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-          link.classList.add("active");
-        }
-      });
-    });
   </script>
+
 </body>
 </html>
