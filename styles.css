@@ -602,20 +602,29 @@ footer p {
   right: 20px;
 }
 
-/* ======================== CONTACTO ======================== */
+
+/* ================= CONTACTO ================= */
 
 .contacto {
   background-color: #f4f1ec;
 }
 
+/* Título */
 .contacto h2 {
   text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
   color: #2e4d38;
+  margin-bottom: 0.5rem;
 }
 
-.contacto p {
+/* Subtítulo */
+.contacto > .container > p {
   text-align: center;
-  color: #444;
+  font-size: 1.05rem;
+  color: #4a7856;
+  margin-bottom: 3rem;
+  line-height: 1.6;
 }
 
 /* Grid principal */
@@ -623,19 +632,60 @@ footer p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center; /* 👈 CLAVE */
+  align-items: center;
 }
 
+/* ================= MAPA ================= */
 
-/* MAPA */
-.contacto-mapa iframe {
+.contacto-mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.mapa-wrapper {
   width: 100%;
+  max-width: 520px;
   height: 450px;
-  border-radius: 14px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
-/* FORMULARIO */
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Overlay clickeable */
+.mapa-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.mapa-overlay:hover {
+  background: rgba(0,0,0,0.28);
+}
+
+.mapa-overlay span {
+  background: #ffffff;
+  color: #2e4d38;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* ================= FORMULARIO ================= */
+
 .contacto-form {
   background-color: #ffffff;
   padding: 2.5rem;
@@ -644,7 +694,7 @@ footer p {
   position: relative;
 }
 
-/* Borde suave estilo cards */
+/* Borde suave */
 .contacto-form::after {
   content: "";
   position: absolute;
@@ -682,7 +732,6 @@ footer p {
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Focus elegante */
 .contacto-form input:focus,
 .contacto-form select:focus,
 .contacto-form textarea:focus {
@@ -691,45 +740,27 @@ footer p {
   box-shadow: 0 0 0 3px rgba(122,172,124,0.25);
 }
 
-/* Textarea */
 .contacto-form textarea {
   min-height: 140px;
   resize: vertical;
 }
 
-/* Botón */
 .contacto-form button {
-  align-self: flex-start;
   margin-top: 0.5rem;
 }
 
-/* ======================== RESPONSIVE CONTACTO ======================== */
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 900px) {
   .contacto-grid {
     grid-template-columns: 1fr;
   }
 
-  .contacto-mapa iframe {
+  .mapa-wrapper {
     height: 320px;
   }
 
   .contacto-form {
     padding: 2rem;
   }
-}
-
-/* ======================== TITULO CONTACTO ======================== */
-
-.contacto h2 {
-  font-size: 2.4rem;           
-  font-weight: 700;
-  color: #2e4d38;
-  margin-bottom: 0.5rem;
-}
-
-.contacto > .container > p {
-  font-size: 1.05rem;
-  color: #4a7856;
-  margin-bottom: 3rem;
-  line-height: 1.6;
 }
