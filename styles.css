@@ -601,3 +601,135 @@ footer p {
 .lightbox-arrow.right {
   right: 20px;
 }
+
+/* ======================== CONTACTO ======================== */
+
+.contacto {
+  background-color: #f4f1ec;
+}
+
+.contacto h2 {
+  text-align: center;
+  color: #2e4d38;
+}
+
+.contacto p {
+  text-align: center;
+  color: #444;
+}
+
+/* Grid principal */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center; /* 👈 CLAVE */
+}
+
+
+/* MAPA */
+.contacto-mapa iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* FORMULARIO */
+.contacto-form {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Borde suave estilo cards */
+.contacto-form::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(122,172,124,0),
+    rgba(74,120,86,.35),
+    rgba(122,172,124,0)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Inputs */
+.contacto-form label {
+  font-weight: 700;
+  color: #4a7856;
+  margin-bottom: 0.2rem;
+}
+
+.contacto-form input,
+.contacto-form select,
+.contacto-form textarea {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #d8d8d8;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Focus elegante */
+.contacto-form input:focus,
+.contacto-form select:focus,
+.contacto-form textarea:focus {
+  outline: none;
+  border-color: #7aac7c;
+  box-shadow: 0 0 0 3px rgba(122,172,124,0.25);
+}
+
+/* Textarea */
+.contacto-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Botón */
+.contacto-form button {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* ======================== RESPONSIVE CONTACTO ======================== */
+@media (max-width: 900px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-mapa iframe {
+    height: 320px;
+  }
+
+  .contacto-form {
+    padding: 2rem;
+  }
+}
+
+/* ======================== TITULO CONTACTO ======================== */
+
+.contacto h2 {
+  font-size: 2.4rem;           
+  font-weight: 700;
+  color: #2e4d38;
+  margin-bottom: 0.5rem;
+}
+
+.contacto > .container > p {
+  font-size: 1.05rem;
+  color: #4a7856;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
